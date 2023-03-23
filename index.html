@@ -5,46 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="main.css" />
     <title>portfolio</title>
+
     <nav class="navbar">
       <h1>Alan Szafarczyk</h1>
       <ul class="navbar_list">
         <li class="navbar navbar__list--element">Home</li>
         <li class="navbar navbar__list--element">About</li>
-        <li class="navbar navbar__list--element">Contact</li>
+        <li class="navbar navbar__list--element">Projects</li>
+        <li class="navbar navbar__list--button">Get in touch</li>
       </ul>
     </nav>
   </head>
   <body>
     <div class="intro">
-    <h2>Hey I'm Alan Szafarczyk</h2>
-    <h3>A Junior Software Developer based in the UK</h3>
-    <img class ='intro__picture' src="images/stazysta.jpg" /> 
-    
+      <h2 class="intro__name">Hey! I'm Alan Szafarczyk</h2>
+      <h3 class="intro__position">
+        A Junior Software Developer based in the UK
+      </h3>
+      <img class="intro__picture" src="images/stazysta.jpg" />
     </div>
-    <div>
-    <h2>About Me</h2>
-    <p>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab dolores minus
-      tempore repellendus, corporis debitis! Autem, sunt similique perferendis
-      accusantium vel cumque laudantium sit est porro, accusamus ea, id
-      perspiciatis.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ex
-      maiores totam magni tenetur eius similique nemo? Minima esse dolores
-      consequatur eius, reprehenderit temporibus quo, ullam eaque culpa
-      laudantium facilis?
-    </p>
+    <div class="about">
+      <img
+        class="about__picture"
+        src="images/photo-1510915228340-29c85a43dcfe.jpg"
+      />
+      <h2 class="about__header">About Me</h2>
+      <p class="about__paragraph1">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab dolores
+        minus tempore repellendus, corporis debitis! Autem, sunt similique
+        perferendis accusantium vel cumque laudantium sit est porro, accusamus
+        ea, id perspiciatis.
+      </p>
+      <p class="about__paragraph2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ex
+        maiores totam magni tenetur eius similique nemo? Minima esse dolores
+        consequatur eius, reprehenderit temporibus quo, ullam eaque culpa
+        laudantium facilis?
+      </p>
+    </div>
 
-    <h1>Technical skills</h1>
-    
-    <img src = "images/Vector.svg">
-    <img src = "images/Vector(1).svg">
-    <p></p>
-
-    <h2>My Projects</h2>
+    <div class="skills">
+      <h1 class="skills__header">Technical skills</h1>
+      <p class="skills__paragraph">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem esse
+        dolore natus debitis. Provident beatae modi est cupiditate quos totam
+        velit aperiam, magni quia numquam illum? Quia totam impedit praesentium.
+      </p>
+      <img ssrc="images/Vector.svg" />
+      <iframe src="images/Vector (1).svg" />
+    </div>
 
     <div class="project">
+      <h2>My Projects</h2>
+
       <p>REACT</p>
       <h1>Client Project</h1>
       <p>
@@ -53,10 +66,11 @@
         aperiam quis corrupti ratione? Distinctio voluptates, doloremque odit at
         adipisci ab a?
       </p>
-      <button class="project__button"></button>
-      <button class="project__button"></button>
+      <button class="project__button">Code"</button>
+      <button class="project__button">Preview</button>
     </div>
   </body>
+
   <footer>
     <nav class="footer">
       <p>alan.szafarczyk@gmail.com</p>
