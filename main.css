@@ -79,16 +79,94 @@ body {
   font-family: "Open Sans", "Arial";
 }
 
-.skills {
+.skills__container {
   display: flex;
   flex-direction: column;
   margin: 20px;
+  align-items: center;
 }
-.skills__header {
+.skills__container--header {
+  font-family: "Montserrat", "sans serif";
   align-self: center;
 }
-.skills__paragraph {
+.skills__container--paragraph {
+  font-family: "Open Sans", "Arial";
   align-self: center;
+}
+.skills__list {
+  justify-self: center;
+  width: 100%;
+  display: grid;
+  grid-template-areas: "picture1 picture2 picture3 picture4 picture5 picture6 picture7 picture8 picture9" "text1 text2 text3 text4 text5 text6 text7 text8 text9";
+  font-family: "Open Sans", "Arial";
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: 1fr 1fr;
+  align-content: center;
+  justify-items: center;
+  /*----------------------------------------------------*/
+}
+.skills__list--picture1 {
+  grid-area: picture1;
+}
+.skills__list--picture2 {
+  grid-area: picture2;
+}
+.skills__list--picture3 {
+  grid-area: picture3;
+}
+.skills__list--picture4 {
+  grid-area: picture4;
+}
+.skills__list--picture5 {
+  grid-area: picture5;
+}
+.skills__list--picture6 {
+  grid-area: picture6;
+}
+.skills__list--picture7 {
+  grid-area: picture7;
+}
+.skills__list--picture8 {
+  grid-area: picture8;
+}
+.skills__list--picture9 {
+  grid-area: picture9;
+}
+.skills__list--item1 {
+  grid-area: text1;
+  align-self: self-start;
+}
+.skills__list--item2 {
+  grid-area: text2;
+  align-self: self-start;
+}
+.skills__list--item3 {
+  grid-area: text3;
+  align-self: self-start;
+}
+.skills__list--item4 {
+  align-self: self-start;
+  grid-area: text4;
+}
+.skills__list--item5 {
+  align-self: self-start;
+  grid-area: text5;
+}
+.skills__list--item6 {
+  align-self: self-start;
+  grid-area: text6;
+}
+.skills__list--item7 {
+  align-self: self-start;
+  grid-area: text7;
+}
+.skills__list--item8 {
+  align-self: self-start;
+  grid-area: text8;
+}
+.skills__list--item9 {
+  align-self: self-start;
+  grid-area: text9;
 }
 
 @media screen and (max-width: 768px) {
