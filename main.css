@@ -184,6 +184,8 @@ body {
   justify-content: center;
 }
 .project .card {
+  padding: 5px;
+  margin: 5px;
   width: 60%;
   display: flex;
   flex-direction: column;
@@ -195,10 +197,12 @@ body {
   width: 100px;
 }
 .project .card__title {
-  align-self: center;
+  align-self: start;
+  justify-self: start;
 }
 .project .card__header1 {
-  align-self: center;
+  align-self: start;
+  justify-self: start;
 }
 .project .card__paragraph {
   align-self: center;
