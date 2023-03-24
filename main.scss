@@ -18,13 +18,19 @@ $button-colour: white;
   display: flex;
   justify-content: space-between;
 
+  &__username {
+    padding-left: 10px;
+  }
+
   &__list--element {
+    font-size: 12px;
     padding: 10px;
     text-decoration: none;
     display: inline;
   }
 
   &__list--button {
+    font-size: 12px;
     font-weight: bold;
     border: 2px solid;
     border-radius: 5px;
@@ -71,19 +77,22 @@ body {
 
 .about {
   margin-top: 30px;
+  margin-right: 20px;
+
   display: grid;
   grid-template-areas:
     "picture title"
     "picture text1"
     "picture text2";
 
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 500px px;
   grid-template-rows: 1fr 1fr 1fr;
 
   &__picture {
+    padding-right: 20px;
     width: 80%;
     align-self: center;
-    justify-self: center;
+    justify-self: right;
     grid-area: picture;
   }
 
@@ -94,6 +103,7 @@ body {
 
   &__paragraph1 {
     font-family: $secondary-font;
+    line-height: 25px;
   }
 
   &__paragraph2 {
@@ -105,10 +115,11 @@ body {
   &__container {
     display: flex;
     flex-direction: column;
-    margin: 20px;
+    margin: 50px 10px;
     align-items: center;
 
     &--header {
+      margin-bottom: 40px;
       font-family: $primary-font;
       align-self: center;
     }
@@ -208,102 +219,116 @@ body {
 
   font-family: $secondary-font;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 100px 1fr 1fr 1fr 1fr;
+  grid-template-rows: 200px 1fr 1fr;
   justify-items: center;
 
   &__header1 {
+    font-size: 36px;
     display: flex;
     grid-area: title;
     align-self: center;
     justify-content: center;
+    margin: 50px;
+  }
+}
+.card {
+  padding: 5px;
+  margin: 5px;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+
+  &__buttons--element1 {
+    border: 1px solid;
+    margin-top: 10px;
+    margin-right: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: $secondary-font;
+    padding: 7px 25px;
+    background-color: $button-colour;
   }
 
-  .card {
-    padding: 5px;
-    margin: 5px;
-    width: 60%;
+  &__buttons--element2 {
+    border: 1px solid;
+    margin-top: 10px;
+    margin-right: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: $secondary-font;
+    padding: 7px 25px;
+    background-color: $button-colour;
+  }
+  &__buttons {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+  }
+
+  &__img {
+    margin: 10px;
     align-self: center;
+    height: auto;
+    width: 175px;
+  }
 
-    &__buttons--element1 {
-      border: 1px solid;
-      margin-top: 10px;
-      margin-right: 5px;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 16px;
-      font-family: $secondary-font;
-      padding: 7px 25px;
-      background-color: $button-colour;
-    }
+  &__title {
+    align-self: start;
+    justify-self: start;
+  }
+  &__header1 {
+    align-self: start;
+    justify-self: start;
+  }
+  &__paragraph {
+    padding: 10px 0px;
+    align-self: center;
+  }
 
-    &__buttons--element2 {
-      border: 1px solid;
-      margin-top: 10px;
-      margin-right: 5px;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 16px;
-      font-family: $secondary-font;
-      padding: 7px 25px;
-      background-color: $button-colour;
-    }
-    &__buttons {
-      display: flex;
-      flex-direction: row;
-    }
+  &__item1 {
+    grid-area: card1;
+  }
 
-    &__img {
-      align-self: center;
-      height: 100px;
-      width: 100px;
-    }
+  &__item2 {
+    grid-area: card2;
+  }
 
-    &__title {
-      align-self: start;
-      justify-self: start;
-    }
-    &__header1 {
-      align-self: start;
-      justify-self: start;
-    }
-    &__paragraph {
-      align-self: center;
-    }
+  &__item3 {
+    grid-area: card3;
+  }
 
-    &__item1 {
-      grid-area: card1;
-    }
+  &__item4 {
+    grid-area: card4;
+  }
+  &__item5 {
+    grid-area: card5;
+  }
+  &__item6 {
+    grid-area: card6;
+  }
+}
 
-    &__item2 {
-      grid-area: card2;
-    }
+.footer {
+  height: 80px;
+  margin-top: 20px;
 
-    &__item3 {
-      grid-area: card3;
-    }
+  display: flex;
 
-    &__item4 {
-      grid-area: card4;
-    }
-    &__item5 {
-      grid-area: card5;
-    }
-    &__item6 {
-      grid-area: card6;
-    }
-    &__item7 {
-      grid-area: card7;
-    }
-    &__item8 {
-      grid-area: card8;
-    }
-    &__item9 {
-      grid-area: card9;
-    }
+  background-color: black;
+  align-items: center;
+  justify-content: space-between;
+
+  &__element1 {
+    margin: 0 40px;
+    color: $button-colour;
+    font-family: $secondary-font;
+  }
+  &__element2 {
+    margin: 0px 40px;
   }
 }
 
