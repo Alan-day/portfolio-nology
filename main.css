@@ -191,6 +191,34 @@ body {
   flex-direction: column;
   align-self: center;
 }
+.project .card__buttons--element1 {
+  border: 1px solid;
+  margin-top: 10px;
+  margin-right: 5px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: "Open Sans", "Arial";
+  padding: 7px 25px;
+  background-color: white;
+}
+.project .card__buttons--element2 {
+  border: 1px solid;
+  margin-top: 10px;
+  margin-right: 5px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: "Open Sans", "Arial";
+  padding: 7px 25px;
+  background-color: white;
+}
+.project .card__buttons {
+  display: flex;
+  flex-direction: row;
+}
 .project .card__img {
   align-self: center;
   height: 100px;

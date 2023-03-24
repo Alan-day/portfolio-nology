@@ -2,6 +2,7 @@
 
 $primary-font: "Montserrat", "sans serif";
 $secondary-font: "Open Sans", "Arial";
+$button-colour: white;
 
 * {
   box-sizing: border-box;
@@ -225,6 +226,36 @@ body {
     flex-direction: column;
     align-self: center;
 
+    &__buttons--element1 {
+      border: 1px solid;
+      margin-top: 10px;
+      margin-right: 5px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      font-family: $secondary-font;
+      padding: 7px 25px;
+      background-color: $button-colour;
+    }
+
+    &__buttons--element2 {
+      border: 1px solid;
+      margin-top: 10px;
+      margin-right: 5px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      font-family: $secondary-font;
+      padding: 7px 25px;
+      background-color: $button-colour;
+    }
+    &__buttons {
+      display: flex;
+      flex-direction: row;
+    }
+
     &__img {
       align-self: center;
       height: 100px;
@@ -312,6 +343,7 @@ body {
     flex-direction: column;
     align-items: center;
   }
+
   .intro {
     margin-top: 0;
     padding: 0;
