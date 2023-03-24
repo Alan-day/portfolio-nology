@@ -11,19 +11,25 @@ $button-colour: white;
 }
 
 .navbar {
-  margin: 10px;
-  padding: 20px;
+  margin-top: 20px;
+  margin: 5px;
+  margin-right: 40px;
+  padding: 5px;
   font-family: $primary-font;
-  padding: 10px;
+
   display: flex;
   justify-content: space-between;
 
   &__username {
-    padding-left: 10px;
+    padding-left: 30px;
+    font-weight: 1500;
+    font-size: 24px;
   }
 
   &__list--element {
-    font-size: 12px;
+    margin: 0;
+    font-weight: bold;
+    font-size: 16px;
     padding: 10px;
     text-decoration: none;
     display: inline;
@@ -43,6 +49,8 @@ $button-colour: white;
 .intro {
   margin-top: 20px;
   padding: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
 
   display: grid;
   grid-template-areas:
@@ -52,21 +60,24 @@ $button-colour: white;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
 
-  h2 {
+  &__name {
     font-family: $primary-font;
     grid-area: surname;
-    align-self: center;
+    align-self: end;
   }
 
-  h3 {
+  &__position {
+    align-self: start;
     font-family: $primary-font;
+    justify-items: center;
     grid-area: positions;
-    font-size: 36px;
+    font-size: 48px;
   }
 
   &__picture {
-    width: 80%;
+    width: 70%;
     grid-area: picture;
+    align-items: end;
     justify-self: center;
   }
 }
@@ -115,6 +126,7 @@ body {
   &__container {
     display: flex;
     flex-direction: column;
+
     margin: 50px 10px;
     align-items: center;
 
@@ -133,6 +145,7 @@ body {
   &__list {
     justify-self: center;
     width: 100%;
+    padding: 0 10vh;
     display: grid;
     grid-template-areas:
       "picture1 picture2 picture3 picture4 picture5 picture6 picture7 picture8 picture9"
@@ -145,30 +158,39 @@ body {
 
     &--picture1 {
       grid-area: picture1;
+      padding: 5px;
     }
     &--picture2 {
       grid-area: picture2;
+      padding: 5px;
     }
     &--picture3 {
       grid-area: picture3;
+      padding: 5px;
     }
     &--picture4 {
       grid-area: picture4;
+      padding: 5px;
     }
     &--picture5 {
       grid-area: picture5;
+      padding: 5px;
     }
     &--picture6 {
       grid-area: picture6;
+      padding: 5px;
     }
     &--picture7 {
       grid-area: picture7;
+      padding: 5px;
     }
     &--picture8 {
       grid-area: picture8;
+      padding: 5px;
     }
     &--picture9 {
       grid-area: picture9;
+      padding: 5px;
     }
     /*----------------------------------------------------*/
     &--item1 {
@@ -233,7 +255,7 @@ body {
 }
 .card {
   padding: 5px;
-  margin: 5px;
+  margin: 20px;
   width: 60%;
   display: flex;
   flex-direction: column;
@@ -270,10 +292,10 @@ body {
   }
 
   &__img {
-    margin: 10px;
-    align-self: center;
+    margin-bottom: 10px;
+    align-self: self-start;
     height: auto;
-    width: 175px;
+    width: 100%;
   }
 
   &__title {

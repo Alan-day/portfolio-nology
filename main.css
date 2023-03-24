@@ -6,18 +6,23 @@
 }
 
 .navbar {
-  margin: 10px;
-  padding: 20px;
+  margin-top: 20px;
+  margin: 5px;
+  margin-right: 40px;
+  padding: 5px;
   font-family: "Montserrat", "sans serif";
-  padding: 10px;
   display: flex;
   justify-content: space-between;
 }
 .navbar__username {
-  padding-left: 10px;
+  padding-left: 30px;
+  font-weight: 1500;
+  font-size: 24px;
 }
 .navbar__list--element {
-  font-size: 12px;
+  margin: 0;
+  font-weight: bold;
+  font-size: 16px;
   padding: 10px;
   text-decoration: none;
   display: inline;
@@ -35,24 +40,29 @@
 .intro {
   margin-top: 20px;
   padding: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
   display: grid;
   grid-template-areas: " surname picture " "positions picture";
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
 }
-.intro h2 {
+.intro__name {
   font-family: "Montserrat", "sans serif";
   grid-area: surname;
-  align-self: center;
+  align-self: end;
 }
-.intro h3 {
+.intro__position {
+  align-self: start;
   font-family: "Montserrat", "sans serif";
+  justify-items: center;
   grid-area: positions;
-  font-size: 36px;
+  font-size: 48px;
 }
 .intro__picture {
-  width: 80%;
+  width: 70%;
   grid-area: picture;
+  align-items: end;
   justify-self: center;
 }
 
@@ -105,6 +115,7 @@ body {
 .skills__list {
   justify-self: center;
   width: 100%;
+  padding: 0 10vh;
   display: grid;
   grid-template-areas: "picture1 picture2 picture3 picture4 picture5 picture6 picture7 picture8 picture9" "text1 text2 text3 text4 text5 text6 text7 text8 text9";
   font-family: "Open Sans", "Arial";
@@ -116,30 +127,39 @@ body {
 }
 .skills__list--picture1 {
   grid-area: picture1;
+  padding: 5px;
 }
 .skills__list--picture2 {
   grid-area: picture2;
+  padding: 5px;
 }
 .skills__list--picture3 {
   grid-area: picture3;
+  padding: 5px;
 }
 .skills__list--picture4 {
   grid-area: picture4;
+  padding: 5px;
 }
 .skills__list--picture5 {
   grid-area: picture5;
+  padding: 5px;
 }
 .skills__list--picture6 {
   grid-area: picture6;
+  padding: 5px;
 }
 .skills__list--picture7 {
   grid-area: picture7;
+  padding: 5px;
 }
 .skills__list--picture8 {
   grid-area: picture8;
+  padding: 5px;
 }
 .skills__list--picture9 {
   grid-area: picture9;
+  padding: 5px;
 }
 .skills__list--item1 {
   grid-area: text1;
@@ -197,7 +217,7 @@ body {
 
 .card {
   padding: 5px;
-  margin: 5px;
+  margin: 20px;
   width: 60%;
   display: flex;
   flex-direction: column;
@@ -232,10 +252,10 @@ body {
   flex-direction: row;
 }
 .card__img {
-  margin: 10px;
-  align-self: center;
+  margin-bottom: 10px;
+  align-self: self-start;
   height: auto;
-  width: 175px;
+  width: 100%;
 }
 .card__title {
   align-self: start;
