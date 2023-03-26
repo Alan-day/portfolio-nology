@@ -91,34 +91,31 @@ body {
   margin-right: 20px;
 
   display: grid;
-  grid-template-areas:
-    "picture title"
-    "picture text1"
-    "picture text2";
+  justify-items: center;
 
-  grid-template-columns: 500px px;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 
   &__picture {
-    padding-right: 20px;
-    width: 80%;
-    align-self: center;
-    justify-self: right;
-    grid-area: picture;
+    display: flex;
+    align-items: center;
+    height: 25vh;
+    width: 50vh;
   }
 
-  &__header {
-    font-family: $primary-font;
-    align-self: center;
+  &__container {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
   }
-
   &__paragraph1 {
     font-family: $secondary-font;
-    line-height: 25px;
   }
-
   &__paragraph2 {
     font-family: $secondary-font;
+  }
+  &__header {
+    font-family: $primary-font;
   }
 }
 
