@@ -358,9 +358,6 @@ body {
     flex-direction: column;
     align-items: center;
   }
-  about:nth-child(2) {
-    order: 1;
-  }
   .skills__list {
     display: grid;
     width: 100%;
