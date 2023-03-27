@@ -15,9 +15,10 @@
   justify-content: space-between;
 }
 .navbar__username {
-  padding-left: 30px;
-  font-weight: 1500;
-  font-size: 24px;
+  font-family: "Open Sans", "Arial";
+  padding-left: 90px;
+  font-weight: bold;
+  font-size: 14px;
 }
 .navbar__list--element {
   margin: 0;
@@ -28,40 +29,43 @@
   display: inline;
 }
 .navbar__list--button {
+  font-family: "Open Sans", "Arial";
   font-size: 12px;
   font-weight: bold;
-  border: 2px solid;
+  border: 1px solid;
   border-radius: 5px;
-  padding: 10px;
+  padding: 7px 12px;
   text-decoration: none;
   display: inline;
 }
 
 .intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   margin-top: 20px;
   padding: 20px;
   margin-left: 40px;
   margin-right: 40px;
-  display: grid;
-  grid-template-areas: " surname picture " "positions picture";
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+}
+.intro__container {
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat", "sans serif";
+  align-self: center;
 }
 .intro__name {
-  font-family: "Montserrat", "sans serif";
-  grid-area: surname;
-  align-self: end;
+  padding-left: 20px;
 }
 .intro__position {
-  align-self: start;
+  padding-left: 30px;
+  margin-top: 20px;
   font-family: "Montserrat", "sans serif";
-  justify-items: center;
-  grid-area: positions;
-  font-size: 48px;
+  font-size: 42px;
 }
 .intro__picture {
+  padding-top: 40px;
   width: 70%;
-  grid-area: picture;
   align-items: end;
   justify-self: center;
 }
@@ -78,6 +82,7 @@ body {
   grid-template-columns: 1fr 1fr;
 }
 .about__picture {
+  padding-left: 20px;
   display: flex;
   align-items: center;
   height: 25vh;
