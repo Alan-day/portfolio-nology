@@ -89,15 +89,17 @@ body {
 }
 
 .about {
-  margin-top: 30px;
-  margin-right: 20px;
-
-  display: grid;
-  justify-items: center;
-
-  grid-template-columns: 1fr 1fr;
-
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+      "picture heading"
+      "picture paragraph1"
+      "picture paragraph2";
+  }
   &__picture1 {
+    grid-area: picture;
     padding-left: 20px;
     display: flex;
     align-items: center;
@@ -105,20 +107,16 @@ body {
     width: 600px;
   }
 
-  &__container {
-    margin-left: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-  }
-
   &__paragraph1 {
+    grid-area: paragraph1;
     font-family: $secondary-font;
   }
   &__paragraph2 {
+    grid-area: paragraph2;
     font-family: $secondary-font;
   }
   &__header {
+    grid-area: heading;
     align-self: start;
     justify-self: start;
     font-family: $primary-font;
@@ -405,29 +403,41 @@ body {
   }
 
   .about {
-    margin: 0;
-    display: grid;
-    grid-template-columns: 1fr;
-
     &__container {
-      display: flex;
-      flex-direction: column;
+      margin: 0;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 100px 1fr 100px 100px;
+      grid-template-areas:
+        "about"
+        "picture"
+        "paragraph1"
+        "paragraph2";
     }
     &__picture1 {
+      margin: 10px 0;
+      justify-self: center;
+      grid-area: picture;
       align-self: center;
       padding: 0;
     }
 
     &__header {
-      align-self: center;
+      grid-area: about;
+      align-self: end;
+      justify-self: center;
       font-size: 32px;
-      margin: 10px 0px;
+      margin: 20px 0px;
+    }
+    &__paragraph1 {
+      margin: 30px;
+      justify-self: center;
+      grid-area: paragraph1;
     }
     &__paragraph2 {
-      margin: 10px 0px;
-    }
-    &__paragraph2 {
-      margin: 10px 0px;
+      justify-self: center;
+      margin: 30px;
+      grid-area: paragraph2;
     }
   }
 
