@@ -358,6 +358,9 @@ body {
     flex-direction: column;
     align-items: center;
   }
+  .about__picture1 {
+    margin: 40px 0px;
+  }
   .skills__list {
     display: grid;
     width: 100%;
@@ -374,20 +377,29 @@ body {
     display: none;
   }
   body {
-    display: flex;
-    flex-direction: column;
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr;
     align-items: center;
   }
   .intro {
     margin-top: 0;
     padding: 0;
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
   }
   .intro__picture {
     display: none;
   }
   .intro__name {
+    font-size: 16px;
+    padding: 0;
+    align-self: flex-start;
+  }
+  .intro__position {
+    margin: 40px 0px;
+    font-size: 70px;
+    padding: 0;
     align-self: center;
   }
   .footer {
