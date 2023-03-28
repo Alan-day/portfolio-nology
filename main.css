@@ -103,6 +103,8 @@ body {
   font-family: "Open Sans", "Arial";
 }
 .about__header {
+  align-self: start;
+  justify-self: start;
   font-family: "Montserrat", "sans serif";
 }
 
@@ -352,14 +354,28 @@ body {
     padding: 0;
   }
   .about {
-    padding: 5px;
-    margin: 5px;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .about__container {
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
   .about__picture1 {
-    margin: 40px 0px;
+    align-self: center;
+    padding: 0;
+  }
+  .about__header {
+    align-self: center;
+    font-size: 32px;
+    margin: 10px 0px;
+  }
+  .about__paragraph2 {
+    margin: 10px 0px;
+  }
+  .about__paragraph2 {
+    margin: 10px 0px;
   }
   .skills__list {
     display: grid;
@@ -403,6 +419,9 @@ body {
     align-self: center;
   }
   .footer {
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    height: 250px;
     width: 100%;
   }
 }/*# sourceMappingURL=main.css.map */

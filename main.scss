@@ -119,6 +119,8 @@ body {
     font-family: $secondary-font;
   }
   &__header {
+    align-self: start;
+    justify-self: start;
     font-family: $primary-font;
   }
 }
@@ -403,14 +405,29 @@ body {
   }
 
   .about {
-    padding: 5px;
-    margin: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
 
+    &__container {
+      display: flex;
+      flex-direction: column;
+    }
     &__picture1 {
-      margin: 40px 0px;
+      align-self: center;
+      padding: 0;
+    }
+
+    &__header {
+      align-self: center;
+      font-size: 32px;
+      margin: 10px 0px;
+    }
+    &__paragraph2 {
+      margin: 10px 0px;
+    }
+    &__paragraph2 {
+      margin: 10px 0px;
     }
   }
 
@@ -469,6 +486,9 @@ body {
   }
 
   .footer {
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    height: 250px;
     width: 100%;
   }
 }
