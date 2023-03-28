@@ -264,28 +264,32 @@ body {
   align-self: center;
 
   &__buttons--element1 {
+    display: flex;
+    align-items: center;
     border: 1px solid;
     margin-top: 10px;
     margin-right: 5px;
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 14px;
     font-family: $secondary-font;
-    padding: 7px 25px;
+    padding: 7px 15px;
     background-color: $button-colour;
   }
 
   &__buttons--element2 {
+    display: flex;
+    align-items: center;
     border: 1px solid;
     margin-top: 10px;
     margin-right: 5px;
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 14px;
     font-family: $secondary-font;
-    padding: 7px 25px;
+    padding: 7px 15px;
     background-color: $button-colour;
   }
   &__buttons {
