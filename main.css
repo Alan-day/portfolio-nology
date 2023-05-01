@@ -268,10 +268,17 @@ body {
 .card__img {
   margin-bottom: 10px;
   align-self: self-start;
-  height: auto;
+  height: 150px;
   width: 100%;
 }
+.card__img--calculator {
+  border-radius: 20px;
+}
+.card__img--morse {
+  border-radius: 10px;
+}
 .card__title {
+  margin: 10px 0px;
   align-self: start;
   justify-self: start;
 }
@@ -281,7 +288,7 @@ body {
 }
 .card__paragraph {
   padding: 10px 0px;
-  align-self: center;
+  align-self: flex-start;
 }
 .card__item1 {
   grid-area: card1;

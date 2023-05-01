@@ -303,11 +303,20 @@ body {
   &__img {
     margin-bottom: 10px;
     align-self: self-start;
-    height: auto;
+    height: 150px;
     width: 100%;
+
+    &--calculator {
+      border-radius: 20px;
+    }
+
+    &--morse {
+      border-radius: 10px;
+    }
   }
 
   &__title {
+    margin: 10px 0px;
     align-self: start;
     justify-self: start;
   }
@@ -317,7 +326,7 @@ body {
   }
   &__paragraph {
     padding: 10px 0px;
-    align-self: center;
+    align-self: flex-start;
   }
 
   &__item1 {
