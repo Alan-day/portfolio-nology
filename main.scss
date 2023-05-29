@@ -105,9 +105,9 @@ body {
     justify-self: center;
     grid-area: picture;
     padding-left: 20px;
-
-    height: 350px;
-    width: 600px;
+    border-radius: 10px;
+    height: 600px;
+    width: 500px;
   }
 
   &__paragraph1 {
@@ -373,6 +373,7 @@ body {
 }
 
 @media screen and (max-width: 1280px) {
+  ////////////////////////////////////////////////
   .intro {
     &__name {
       font-size: 20px;
@@ -395,16 +396,17 @@ body {
       padding-right: 10px;
       display: flex;
       align-items: center;
-      height: 300px;
-      width: 450px;
+      height: 600px;
+      width: 400px;
+      border-radius: 10px;
     }
     &__paragraph1 {
       font-family: $secondary-font;
-      font-size: 14px;
+      font-size: 18px;
     }
     &__paragraph2 {
       font-family: $secondary-font;
-      font-size: 14px;
+      font-size: 18px;
     }
     &__header {
       font-family: $primary-font;
@@ -459,19 +461,26 @@ body {
     }
   }
 
-  .skills__list {
-    display: grid;
-    width: 100%;
-    grid-template-areas:
-      "picture1 picture2 picture3 "
-      "text1 text2 text3 "
-      "picture4 picture5 picture6 "
-      "text4 text5 text6 "
-      "picture7 picture8 picture9"
-      "text7 text8 text9";
-    font-family: $secondary-font;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 100px 1fr 100px 1fr 100px;
+  .skills {
+    &__list {
+      display: grid;
+      width: 100%;
+      grid-template-areas:
+        "picture1 picture2 picture3 "
+        "text1 text2 text3 "
+        "picture4 picture5 picture6 "
+        "text4 text5 text6 "
+        "picture7 picture8 picture9"
+        "text7 text8 text9";
+      font-family: $secondary-font;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1fr 100px 1fr 100px 1fr 100px;
+    }
+
+    &__container--paragraph {
+      margin: 15px;
+      font-size: 18px;
+    }
   }
 
   .project {

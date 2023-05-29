@@ -88,8 +88,9 @@ body {
   justify-self: center;
   grid-area: picture;
   padding-left: 20px;
-  height: 350px;
-  width: 600px;
+  border-radius: 10px;
+  height: 600px;
+  width: 500px;
 }
 .about__paragraph1 {
   grid-area: paragraph1;
@@ -342,16 +343,17 @@ body {
     padding-right: 10px;
     display: flex;
     align-items: center;
-    height: 300px;
-    width: 450px;
+    height: 600px;
+    width: 400px;
+    border-radius: 10px;
   }
   .about__paragraph1 {
     font-family: "Open Sans", "Arial";
-    font-size: 14px;
+    font-size: 18px;
   }
   .about__paragraph2 {
     font-family: "Open Sans", "Arial";
-    font-size: 14px;
+    font-size: 18px;
   }
   .about__header {
     font-family: "Montserrat", "sans serif";
@@ -402,6 +404,10 @@ body {
     font-family: "Open Sans", "Arial";
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr 100px 1fr 100px 1fr 100px;
+  }
+  .skills__container--paragraph {
+    margin: 15px;
+    font-size: 18px;
   }
   .project {
     display: flex;
