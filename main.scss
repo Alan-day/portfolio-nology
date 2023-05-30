@@ -240,7 +240,7 @@ body {
   grid-template-areas:
     "title title title"
     "card1 card2 card3"
-    "card4 card5 card6";
+    " card4 card5 card6 ";
 
   font-family: $secondary-font;
   grid-template-columns: repeat(3, 1fr);
@@ -378,12 +378,12 @@ body {
     grid-template-areas:
       "title title "
       "card1 card2"
-      "card3 card4"
-      "card5 card6";
+      "card3 card4 "
+      "card5 card6 ";
 
     font-family: $secondary-font;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 200px 1fr 1fr;
+    grid-template-rows: 200px 1fr 1fr 1fr;
     justify-items: center;
 
     &__header1 {
@@ -394,45 +394,57 @@ body {
       justify-content: center;
       margin: 50px;
     }
-    .intro {
-      &__name {
-        font-size: 20px;
-        align-self: start;
-      }
-      &__position {
-        font-size: 30px;
-      }
+    &--item {
+      width: 100px;
     }
-
-    .skills {
-      &__list {
-        padding: 0 3vh;
-      }
+  }
+  .intro {
+    &__name {
+      font-size: 20px;
+      align-self: start;
     }
-
-    .about {
-      &__picture1 {
-        padding-left: 20px;
-        padding-right: 10px;
-        display: flex;
-        align-items: center;
-        height: 600px;
-
-        border-radius: 10px;
-      }
-      &__paragraph1 {
-        font-family: $secondary-font;
-        font-size: 18px;
-      }
-      &__paragraph2 {
-        font-family: $secondary-font;
-        font-size: 18px;
-      }
-      &__header {
-        font-family: $primary-font;
-        font-size: 28px;
-      }
+    &__position {
+      font-size: 30px;
     }
+  }
+
+  .skills {
+    &__list {
+      padding: 0 3vh;
+    }
+  }
+
+  .about {
+    &__picture1 {
+      padding-left: 20px;
+      padding-right: 10px;
+      display: flex;
+      align-items: center;
+      height: 600px;
+
+      border-radius: 10px;
+    }
+    &__paragraph1 {
+      font-family: $secondary-font;
+      font-size: 18px;
+    }
+    &__paragraph2 {
+      font-family: $secondary-font;
+      font-size: 18px;
+    }
+    &__header {
+      font-family: $primary-font;
+      font-size: 28px;
+    }
+  }
+
+  .card__img--calculator {
+    margin-bottom: 10px;
+    align-self: self-start;
+    height: 300px;
+    width: 200px;
+
+    border-radius: 20px;
   }
 }
 
@@ -550,6 +562,6 @@ body {
     flex-direction: column-reverse;
     justify-content: space-around;
     height: 250px;
-    width: 100vw;
+    width: 100%;
   }
 }
