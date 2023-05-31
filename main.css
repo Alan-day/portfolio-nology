@@ -325,7 +325,7 @@ body {
   margin: 0px 40px;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1800px) {
   .project {
     display: grid;
     grid-template-areas: "title title " "card1 card2" "card3 card4 " "card5 card6 ";
