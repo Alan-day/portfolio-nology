@@ -89,6 +89,7 @@ body {
   padding-left: 20px;
   border-radius: 10px;
   height: 600px;
+  border-radius: 10px;
 }
 .about__paragraph1 {
   grid-area: paragraph1;
@@ -325,12 +326,13 @@ body {
   margin: 0px 40px;
 }
 
-@media screen and (max-width: 1800px) {
+@media screen and (max-width: 2000px) {
   .project {
     display: grid;
+    justify-content: center;
     grid-template-areas: "title title " "card1 card2" "card3 card4 " "card5 card6 ";
     font-family: "Open Sans", "Arial";
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 40vw);
     grid-template-rows: 200px 1fr 1fr 1fr;
     justify-items: center;
   }
@@ -356,12 +358,12 @@ body {
     padding: 0 3vh;
   }
   .about__picture1 {
+    border-radius: 10px;
     padding-left: 20px;
     padding-right: 10px;
     display: flex;
     align-items: center;
-    height: 600px;
-    border-radius: 10px;
+    height: 400px;
   }
   .about__paragraph1 {
     font-family: "Open Sans", "Arial";
@@ -381,6 +383,39 @@ body {
     height: 300px;
     width: 200px;
     border-radius: 20px;
+  }
+}
+@media screen and (max-width: 1650px) {
+  .about__container {
+    padding-right: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 1fr 1fr;
+    grid-template-areas: "picture heading" "picture paragraph1" "picture paragraph2";
+  }
+  .about__picture1 {
+    border-radius: 10px;
+    padding-right: 50px;
+    align-self: center;
+    justify-self: center;
+    grid-area: picture;
+    padding-left: 20px;
+    height: 400px;
+  }
+  .about__paragraph1 {
+    grid-area: paragraph1;
+    font-family: "Open Sans", "Arial";
+  }
+  .about__paragraph2 {
+    grid-area: paragraph2;
+    font-family: "Open Sans", "Arial";
+  }
+  .about__header {
+    grid-area: heading;
+    align-self: center;
+    justify-self: start;
+    font-family: "Montserrat", "sans serif";
+    font-size: 32px;
   }
 }
 @media screen and (max-width: 825px) {
@@ -404,6 +439,7 @@ body {
     padding: 0;
     height: 600px;
     width: 400px;
+    border-radius: 10px;
   }
   .about__header {
     grid-area: about;

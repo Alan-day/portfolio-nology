@@ -100,12 +100,15 @@ body {
   }
 
   &__picture1 {
+ 
     padding-right: 50px;
     justify-self: center;
     grid-area: picture;
+    
     padding-left: 20px;
     border-radius: 10px;
     height: 600px;
+       border-radius: 10px;
   }
 
   &__paragraph1 {
@@ -370,11 +373,12 @@ body {
   }
 }
 
-@media screen and (max-width: 1800px) {
+@media screen and (max-width: 2000px) {
   ////////////////////////////////////////////////
   ///
   .project {
     display: grid;
+    justify-content: center;
     grid-template-areas:
       "title title "
       "card1 card2"
@@ -382,7 +386,7 @@ body {
       "card5 card6 ";
 
     font-family: $secondary-font;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 40vw);
     grid-template-rows: 200px 1fr 1fr 1fr;
     justify-items: center;
 
@@ -416,13 +420,13 @@ body {
 
   .about {
     &__picture1 {
+      border-radius: 10px;
       padding-left: 20px;
       padding-right: 10px;
       display: flex;
       align-items: center;
-      height: 600px;
-
-      border-radius: 10px;
+      height: 400px;
+   
     }
     &__paragraph1 {
       font-family: $secondary-font;
@@ -448,6 +452,49 @@ body {
   }
 }
 
+@media screen and (max-width: 1650px){
+
+  .about {
+    &__container {
+      padding-right: 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 100px 1fr 1fr;
+      grid-template-areas:
+        "picture heading"
+        "picture paragraph1"
+        "picture paragraph2";
+    }
+  
+    &__picture1 {
+      border-radius: 10px;
+      padding-right: 50px;
+      align-self: center;
+      justify-self: center;
+      grid-area: picture;
+      padding-left: 20px;
+
+      height: 400px;
+    }
+  
+    &__paragraph1 {
+      grid-area: paragraph1;
+      font-family: $secondary-font;
+    }
+    &__paragraph2 {
+      grid-area: paragraph2;
+      font-family: $secondary-font;
+    }
+    &__header {
+      grid-area: heading;
+      align-self: center;
+      justify-self: start;
+      font-family: $primary-font;
+      font-size: 32px;
+    }
+  }
+
+}
 @media screen and (max-width: 825px) {
   ///////////////////////////////////////////
   * {
@@ -470,12 +517,14 @@ body {
     }
     &__picture1 {
       margin: 10px 0;
+
       justify-self: center;
       grid-area: picture;
       align-self: center;
       padding: 0;
       height: 600px;
       width: 400px;
+      border-radius: 10px;
     }
 
     &__header {
