@@ -560,18 +560,20 @@ body {
       margin: 20px 0px;
     }
     &__paragraph1 {
-      margin: 30px;
+      margin: 20px 15px 100px;
       justify-self: center;
       grid-area: paragraph1;
     }
     &__paragraph2 {
+      margin: 100px 15px;
       justify-self: center;
-      margin: 30px;
+      padding-bottom: 100px;
       grid-area: paragraph2;
     }
   }
 
   .skills {
+    margin-top: 150px;
     &__list {
       display: grid;
       width: 100%;
@@ -590,6 +592,9 @@ body {
     &__container--paragraph {
       margin: 15px;
       font-size: 18px;
+    }
+    &__container--header {
+      margin-top: 70px;
     }
   }
 
