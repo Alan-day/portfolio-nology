@@ -31,7 +31,7 @@ $button-colour: white;
     font-weight: bold;
     font-size: 16px;
     padding: 10px;
-    text-decoration: none;
+
     display: inline;
   }
 
@@ -44,6 +44,10 @@ $button-colour: white;
     padding: 7px 12px;
     text-decoration: none;
     display: inline;
+  }
+
+  a {
+    text-decoration: none;
   }
 }
 
@@ -100,15 +104,14 @@ body {
   }
 
   &__picture1 {
- 
     padding-right: 50px;
     justify-self: center;
     grid-area: picture;
-    
+
     padding-left: 20px;
     border-radius: 10px;
     height: 600px;
-       border-radius: 10px;
+    border-radius: 10px;
   }
 
   &__paragraph1 {
@@ -304,15 +307,35 @@ body {
   &__img {
     margin-bottom: 10px;
     align-self: self-start;
-    height: 150px;
-    width: 100%;
 
     &--calculator {
       border-radius: 20px;
+      height: 300px;
+      width: 200px;
     }
 
     &--morse {
       border-radius: 10px;
+      height: 200px;
+      width: 350px;
+    }
+
+    &--tic {
+      height: 300px;
+      width: 300px;
+    }
+
+    &--punk {
+      height: 200px;
+      width: 350px;
+    }
+    &--drink {
+      height: 200px;
+      width: 400px;
+    }
+    &--weather {
+      height: 300px;
+      width: 200px;
     }
   }
 
@@ -324,6 +347,11 @@ body {
   &__header1 {
     align-self: start;
     justify-self: start;
+  }
+  &__header2 {
+    align-self: start;
+    justify-self: start;
+    font-size: 14px;
   }
   &__paragraph {
     padding: 10px 0px;
@@ -426,7 +454,6 @@ body {
       display: flex;
       align-items: center;
       height: 400px;
-   
     }
     &__paragraph1 {
       font-family: $secondary-font;
@@ -452,8 +479,7 @@ body {
   }
 }
 
-@media screen and (max-width: 1650px){
-
+@media screen and (max-width: 1650px) {
   .about {
     &__container {
       padding-right: 20px;
@@ -465,7 +491,7 @@ body {
         "picture paragraph1"
         "picture paragraph2";
     }
-  
+
     &__picture1 {
       border-radius: 10px;
       padding-right: 50px;
@@ -476,7 +502,7 @@ body {
 
       height: 400px;
     }
-  
+
     &__paragraph1 {
       grid-area: paragraph1;
       font-family: $secondary-font;
@@ -493,7 +519,6 @@ body {
       font-size: 32px;
     }
   }
-
 }
 @media screen and (max-width: 825px) {
   ///////////////////////////////////////////

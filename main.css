@@ -25,7 +25,6 @@
   font-weight: bold;
   font-size: 16px;
   padding: 10px;
-  text-decoration: none;
   display: inline;
 }
 .navbar__list--button {
@@ -37,6 +36,9 @@
   padding: 7px 12px;
   text-decoration: none;
   display: inline;
+}
+.navbar a {
+  text-decoration: none;
 }
 
 .intro {
@@ -268,14 +270,32 @@ body {
 .card__img {
   margin-bottom: 10px;
   align-self: self-start;
-  height: 150px;
-  width: 100%;
 }
 .card__img--calculator {
   border-radius: 20px;
+  height: 300px;
+  width: 200px;
 }
 .card__img--morse {
   border-radius: 10px;
+  height: 200px;
+  width: 350px;
+}
+.card__img--tic {
+  height: 300px;
+  width: 300px;
+}
+.card__img--punk {
+  height: 200px;
+  width: 350px;
+}
+.card__img--drink {
+  height: 200px;
+  width: 400px;
+}
+.card__img--weather {
+  height: 300px;
+  width: 200px;
 }
 .card__title {
   margin: 10px 0px;
@@ -285,6 +305,11 @@ body {
 .card__header1 {
   align-self: start;
   justify-self: start;
+}
+.card__header2 {
+  align-self: start;
+  justify-self: start;
+  font-size: 14px;
 }
 .card__paragraph {
   padding: 10px 0px;
