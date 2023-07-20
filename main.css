@@ -299,6 +299,14 @@ body {
   height: 300px;
   width: 200px;
 }
+.card__img--hanged {
+  height: 200px;
+  width: 200px;
+}
+.card__img--ticket {
+  height: 200px;
+  width: 400px;
+}
 .card__title {
   margin: 10px 0px;
   align-self: start;
