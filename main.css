@@ -121,6 +121,7 @@ body {
   align-self: center;
 }
 .skills__container--paragraph {
+  width: 80%;
   font-family: "Open Sans", "Arial";
   align-self: center;
 }
@@ -234,6 +235,7 @@ body {
   display: flex;
   flex-direction: column;
   align-self: center;
+  margin-bottom: 100px;
 }
 .card__buttons--element1 {
   display: flex;
@@ -349,6 +351,27 @@ body {
 }
 .footer__element2 {
   margin: 0px 40px;
+}
+
+.research {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.research__image {
+  width: 600px;
+  border-radius: 10px;
+  margin: 15px 0px;
+}
+.research__header {
+  font-size: 29px;
+  font-family: "Montserrat", "sans serif";
+  margin: 20px 0px;
+  padding: 10px;
+}
+.research__paragraph {
+  font-family: "Open Sans", "Arial";
+  width: 80%;
 }
 
 @media screen and (max-width: 2000px) {
@@ -540,5 +563,8 @@ body {
     justify-content: space-around;
     height: 250px;
     width: 100%;
+  }
+  .research__image {
+    width: 70%;
   }
 }/*# sourceMappingURL=main.css.map */

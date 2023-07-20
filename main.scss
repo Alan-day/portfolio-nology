@@ -146,6 +146,7 @@ body {
     }
 
     &--paragraph {
+      width: 80%;
       font-family: $secondary-font;
       align-self: center;
     }
@@ -379,6 +380,8 @@ body {
   &__item6 {
     grid-area: card6;
   }
+
+  margin-bottom: 100px;
 }
 
 .footer {
@@ -398,6 +401,30 @@ body {
   }
   &__element2 {
     margin: 0px 40px;
+  }
+}
+
+.research {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__image {
+    width: 600px;
+    border-radius: 10px;
+    margin: 15px 0px;
+  }
+
+  &__header {
+    font-size: 29px;
+    font-family: $primary-font;
+    margin: 20px 0px;
+    padding: 10px;
+  }
+
+  &__paragraph {
+    font-family: $secondary-font;
+    width: 80%;
   }
 }
 
@@ -642,5 +669,11 @@ body {
     justify-content: space-around;
     height: 250px;
     width: 100%;
+  }
+
+  .research {
+    &__image {
+      width: 70%;
+    }
   }
 }
